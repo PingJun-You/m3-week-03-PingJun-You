@@ -40,3 +40,11 @@ h1 {
   font-size: 3rem;
   margin-bottom: 30px;
 }
+
+#new-year {
+  font-size: 5rem; /* 调整年份大小 */
+  opacity: 0.5; /* 设置透明度为50% */
+  margin-top: 20px; /* 在年份和倒计时之间增加一些间隔 */
+  color: #fff; /* 设置年份的颜色，白色 */
+  font-weight: bold; /* 加粗字体 */
+}

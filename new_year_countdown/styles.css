@@ -15,17 +15,25 @@ body, html {
 }
 
 #countdown {
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.7); /* Translucent background */
-  padding: 20px;
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 
-#countdown span {
-  display: inline-block;
-  margin: 0 15px;
-  font-size: 2rem;
+.time-unit {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.time-unit span {
+  display: block;
+  font-size: 3rem;
   font-weight: bold;
+}
+
+.time-unit .label {
+  margin-top: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 h1 {

@@ -1,7 +1,8 @@
 $(document).ready(function(){
   function updateCountdown() {
     var now = new Date();
-    var newYear = new Date(now.getFullYear() + 1, 0, 1);
+    var nextYear = now.getFullYear() + 1;
+    var newYear = new Date(nextYear, 0, 1);
     var diff = newYear - now;
 
     var days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -14,10 +15,14 @@ $(document).ready(function(){
     $('#minutes').text(minutes + " 分鐘");
     $('#seconds').text(seconds + " 秒");
 
+
+
     if (diff <= 0) {
       clearInterval(interval);
       $('#countdown').html("新年快樂！");
     }
+
+    $('#next-year').text(nextYear); // 設置下一年的年份
   }
 
   updateCountdown();

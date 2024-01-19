@@ -48,3 +48,15 @@ h1 {
   color: #fff; /* 设置年份的颜色，白色 */
   font-weight: bold; /* 加粗字体 */
 }
+#gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* 或者根据需要调整 */
+}
+
+#spinner-gif {
+  /* 如果需要，可以通过CSS调整GIF的大小 */
+  max-width: 100px;
+  max-height: 100px;
+}

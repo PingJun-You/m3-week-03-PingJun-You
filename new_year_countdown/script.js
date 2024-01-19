@@ -1,4 +1,18 @@
 $(document).ready(function () {
+      // 假设GIF动画播放时间大约是3秒钟
+    var gifDisplayDuration = 1000; // 3秒
+
+    setTimeout(function() {
+        // GIF播放完毕后隐藏GIF容器
+        $('#gif-container').hide();
+
+        // 显示倒数计时器的HTML内容
+        $('#countdown-placeholder').show();
+
+        // 开始倒数计时
+        startCountdown();
+    }, gifDisplayDuration);
+
   function updateCountdown() {
     var now = new Date();
     var nextYear = now.getFullYear() + 1;

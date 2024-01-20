@@ -1,0 +1,77 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  /*font-family: 'Arial', sans-serif; !* 默认字体 *!*/
+  font-family: 'Roboto', sans-serif;
+  background: #333; /* Example background color */
+
+
+  /*background: url('img/background_3.jpg') center no-repeat; !* 添加背景圖片 *!*/
+  /*background-size: cover; !* 確保圖片覆蓋整個屏幕 *!*/
+  background: #333 url('img/background_3.jpg') center no-repeat; /* 添加背景圖片 */
+  background-size: cover; /* 確保圖片覆蓋整個屏幕 */
+
+  color: #fff;
+  text-align: center;
+
+}
+
+.countdown-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.time-unit {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.time-unit span {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; /* 计时器数字的字体 */
+}
+
+.time-unit .label {
+  margin-top: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif; /* 计时器标签的字体，这里使用默认字体 */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif; /* 标题的字体 */
+}
+
+#new-year {
+  font-size: 5rem; /* 调整年份大小 */
+  opacity: 0.5; /* 设置透明度为50% */
+  margin-top: 20px; /* 在年份和倒计时之间增加一些间隔 */
+  color: #fff; /* 设置年份的颜色，白色 */
+  font-weight: 300; /* 字体细度 */
+  font-family: 'Lato', sans-serif; /* 新年年份的字体 */
+}
+
+#gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* 或者根据需要调整 */
+}
+
+#spinner-gif {
+  /* 如果需要，可以通过CSS调整GIF的大小 */
+  max-width: 100px;
+  max-height: 100px;
+}

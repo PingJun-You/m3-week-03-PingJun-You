@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="countdown-container">
+    <h1>NEW YEAR COUNTDOWN</h1>
+<!--    <img src="img/background_3.jpg" alt="Background" id="background-image">-->
+
+    <div id="gif-container">
+        <img src="img/spinner.gif" id="spinner-gif" alt="Loading...">
+    </div>
+
+
+    <div id="countdown-placeholder" style="display:none;">
+        <!-- 倒数计时器的其他部分 -->
+        <div id="countdown">
+            <div class="time-unit">
+                <span id="days">00</span>
+                <div class="label">DAYS</div>
+            </div>
+            <div class="time-unit">
+                <span id="hours">00</span>
+                <div class="label">HOURS</div>
+            </div>
+            <div class="time-unit">
+                <span id="minutes">00</span>
+                <div class="label">MINUTES</div>
+            </div>
+            <div class="time-unit">
+                <span id="seconds">00</span>
+                <div class="label">SECONDS</div>
+            </div>
+        </div>
+    </div>
+    <div id="new-year">2025</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
